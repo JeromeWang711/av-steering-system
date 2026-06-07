@@ -18,3 +18,13 @@ Framework reference: https://github.com/chalmers-revere/working-with-rec-files/t
 
 ## Technologies
 C++, OpenCV, Linux, Shared Memory IPC
+
+## Testing
+Algorithm output was logged and evaluated against ground truth steering angles from pre-recorded driving data.
+
+Run the evaluation script in the same directory as the log file:
+```bash
+python3 evaluate.py
+```
+
+Passing threshold: ≥35% accuracy within ±0.09 tolerance on non-zero ground truth frames.
